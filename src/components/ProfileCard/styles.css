@@ -1,0 +1,22 @@
+.profile-card {
+    padding: 43px 36px;
+    max-height: 334px;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.card-content-left img{
+    max-height: 247px;
+    max-width: 247px;
+}
+
+.card-content-right {
+    background-color: #FFF;
+    height: 100%;
+    width: 100%;
+}

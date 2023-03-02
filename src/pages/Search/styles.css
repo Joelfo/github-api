@@ -1,0 +1,30 @@
+.search-page-container {
+    margin: 55px 90px 0px 90px;
+    
+}
+
+.search-box-container {
+    border-radius: 16px;
+}
+
+.search-box {
+    padding: 54px 30px;
+    
+}
+
+.profile-input-container {
+    padding-right: 922px;
+}
+
+#profile-name-input::placeholder {
+    color: #BFBFBF;
+    margin-top: 4px;
+}
+
+h3 {
+    font-size: 38px;
+}
+
+.profile-card-container {
+    margin-top: 55px;
+}
