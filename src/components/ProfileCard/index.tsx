@@ -1,19 +1,16 @@
 import "./styles.css";
 import joelImg from "assets/images/joel.jpg";
+import GithubProfile from "types/githubProfile";
 
 type Props = {
-  image : string;
-  url : string;
-  numFollowers: number;
-  place : string;
-  name: string;
+  profile : GithubProfile;
 }
 
-const ProfileCard = () => {
+const ProfileCard = ({profile} : Props) => {
   return (
     <div className="card profile-card">
       <div className="card-content-left">
-        <img src={joelImg} alt="Foto do perfil do Github" />
+        <img src={profile.avatar_url} alt="Foto do perfil do Github" />
       </div>
 
       <div className="card-content-right card">
@@ -22,19 +19,19 @@ const ProfileCard = () => {
         <ul className=" info-list">
           <li className=" info-list-item">
             <p className="info-title">Perfil: </p>
-            <a href="https://github.com/Joelfo" target="_blank" rel="noreferrer">https://github.com/Joelfo</a>
+            <a href={profile.html_url} target="_blank" rel="noreferrer">{profile.html_url}</a>
           </li>
           <li className=" info-list-item">
             <p className="info-title">Seguidores:</p>
-            <p>1000000</p>
+            <p>{profile.followers}</p>
           </li>
           <li className=" info-list-item">
             <p className="info-title">Localidade:</p>
-            <p>Niterói</p>
+            <p>{profile.location}</p>
           </li>
           <li className=" info-list-item">
             <p className="info-title">Nome:</p>
-            <p>Joel Lopes</p>
+            <p>{profile.name}</p>
           </li>
         </ul>
       </div>
